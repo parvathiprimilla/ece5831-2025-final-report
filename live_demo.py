@@ -1,17 +1,3 @@
-"""
-live_demo.py
-
-Run-time drowsiness detection demo using Haar cascades + a saved Keras model (.h5).
-
-Usage:
-  python live_demo.py --model_path mobilenet_model.h5
-  python live_demo.py --model_path custom_cnn.h5 --threshold 0.5 --consec 15 --camera 0
-
-Requirements:
-  pip install tensorflow opencv-python numpy simpleaudio tqdm
-
-If simpleaudio isn't installed, the script still runs but will not play sound (it will print instead).
-"""
 import argparse
 import time
 import threading
@@ -34,10 +20,6 @@ except Exception:
 # Alarm sound generator
 # -------------------------
 def make_beep(duration_s=0.4, freq=880.0, sample_rate=44100, volume=0.3):
-    """
-    Create a numpy array with a sine wave beep.
-    Returns int16 array suitable for simpleaudio.
-    """
     t = np.linspace(0, duration_s, int(sample_rate*duration_s), False)
     tone = np.sin(freq * 2 * np.pi * t)
     audio = tone * (32767 * volume)
@@ -71,10 +53,6 @@ def play_beep_nonblocking():
 # Helper: infer model input details
 # -------------------------
 def get_model_input_info(model):
-    """
-    Returns (input_size, channels, expects_grayscale_bool)
-    Accepts typical shapes: (None, H, W, C) or (None, H, W) etc.
-    """
     shape = model.input_shape
     # shape can be tuple or list (for multiple inputs); handle common single-input case
     if isinstance(shape, list):
