@@ -89,7 +89,7 @@ pip install tensorflow opencv-python numpy matplotlib
 
 2. **Real-time Detection:**
 ```bash
-python live_demo.py
+python live_demo.py --model_path cnn_drowsiness_model.h5
 ```
 
 The system will:
