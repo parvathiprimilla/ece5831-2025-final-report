@@ -53,7 +53,7 @@ The system follows a layered architecture:
 - **📹 Demo Video:** https://youtu.be/E05-RDMoDzg
 - **🎥 Presentation Video:** https://youtu.be/Z907nrLepk8 ; https://drive.google.com/file/d/1K0Ik6LjSpuQFNPheaCAMi9z7ZwmSsnG2/view?usp=drive_link
 - **📊 Presentation Slides:** https://drive.google.com/drive/folders/1_KgcQHQtdtvkNrBMRGW3KqRMej1L1G0z?usp=drive_link
-- **📄 Project Report:** 
+- **📄 Project Report:** https://drive.google.com/file/d/1yjUx8WlIBN5IU0JN9Efdqmd76-375BU9/view?usp=drive_link
 - **💾 Dataset:** https://drive.google.com/drive/folders/192jIgznDinHjgEtUXNb4X9McoAkxDCZi?usp=drive_link
 - [MRL Eye Dataset](https://www.kaggle.com/datasets/your-dataset-link)
 
